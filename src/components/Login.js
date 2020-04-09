@@ -14,7 +14,7 @@ background: white;
 `;
 
 
-function Login(props) {
+function Login() {
     return (
         <Styles>
             <Form>
