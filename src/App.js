@@ -22,7 +22,7 @@ function App() {
 
 
     <>
-    <Layout class="container-wrapper">
+    <Layout className=" ">
 
     <NavigationBar />
     <Switch>
