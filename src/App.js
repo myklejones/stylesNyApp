@@ -1,10 +1,10 @@
 import React from 'react';
 import { Route, Switch} from 'react-router'
-import { Link} from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Login from './components/Login'
 import {Layout} from './components/Layout'
 import NavigationBar from './components/Navigationbar'
+import Footer from './components/Footer'
 import { Container } from 'react-bootstrap'
 
 
@@ -25,6 +25,14 @@ function App() {
     <Layout >
 
     <NavigationBar />
+    <br />
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, voluptate! Ea inventore dignissimos, adipisci unde ducimus expedita, non aperiam distinctio dolores quae nisi!
+
+    <Footer /> 
+
+
+
+
     <Switch>
       <Route exact path="/login"   render={(routerProps)=><Login {...routerProps}  /> }    />
       
