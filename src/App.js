@@ -4,7 +4,7 @@ import { Link} from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Login from './components/Login'
 import {Layout} from './components/Layout'
-import {NavigationBar} from './components/Navigationbar'
+import NavigationBar from './components/Navigationbar'
 import { Container } from 'react-bootstrap'
 
 
@@ -22,7 +22,7 @@ function App() {
 
 
     <>
-    <Layout className=" ">
+    <Layout >
 
     <NavigationBar />
     <Switch>
