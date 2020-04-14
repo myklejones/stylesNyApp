@@ -1,51 +1,33 @@
-import React from 'react';
-import { Route, Switch} from 'react-router'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import Login from './components/Login'
-import {Layout} from './components/Layout'
-import NavigationBar from './components/layouts/Navigationbar'
-import Footer from './components/layouts/Footer'
-import { Container } from 'react-bootstrap'
+import React from "react";
+import { Route, Switch } from "react-router";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Login from "./components/Login";
+import { Layout } from "./components/Layout";
+import NavigationBar from "./components/layouts/Navigationbar";
+import Footer from "./components/layouts/Footer";
+import Home from './components/pages/Home'
+import News from './components/pages/News'
+import Contacts from './components/pages/Contacts'
+import Details from './components/pages/Details'
+import NotFoundpage from './components/pages/NotFoundPage'
 
 
 function App() {
-
-
-
-
-
-
-
-
-
   return (
-
-
     <>
-    <Layout >
+      <Layout>
+        <NavigationBar />
 
-    <NavigationBar />
-    <br />
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, voluptate! Ea inventore dignissimos, adipisci unde ducimus expedita, non aperiam distinctio dolores quae nisi!
+        <Switch>
+          <Route path="/home" component={Home}/>
+          <Route path="/news" component={News}/>
+          <Route path="/contacts" component={Contacts}/>
+          <Route path="/details" component={Details}/>
+          <Route path="/not-found-page" component={NotFoundpage}/>
 
-    <Footer /> 
-
-
-
-
-    <Switch>
-      <Route exact path="/login"   render={(routerProps)=><Login {...routerProps}  /> }    />
-      
-    </Switch>
-
-    <Container>
-
-    </Container>
-    
-    </Layout>
-      
-
-       
+        </Switch>
+        <Footer />
+      </Layout>
     </>
   );
 }

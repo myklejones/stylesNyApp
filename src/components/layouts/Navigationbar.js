@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../../logo.svg'
+import {Link} from 'react-router-dom'
 // import styled from 'styled-components'
 
 // const Styles = styled.div`
@@ -33,13 +34,13 @@ function Navigationbar() {
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav m-auto">
                     <li className="nav-item active">
-                        <a className="nav-link text-white text-uppercase ml-5" href="#">Home&nbsp;<i class="fas fa-home"></i> <span className="sr-only">(current)</span></a>
+                        <a className="nav-link text-white text-uppercase ml-5" href="/home">Home&nbsp;<i class="fas fa-home"></i> <span className="sr-only">(current)</span></a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link text-white text-uppercase ml-5" href="#">News</a>
+                        <a className="nav-link text-white text-uppercase ml-5" href="/news">News</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link text-white text-uppercase ml-5" href="#">Contact us</a>
+                        <a className="nav-link text-white text-uppercase ml-5" href="contacts">Contact us</a>
                     </li>
                 </ul>
                 <form className="form-inline my-2 my-lg-0">
