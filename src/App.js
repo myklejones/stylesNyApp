@@ -3,8 +3,8 @@ import { Route, Switch} from 'react-router'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Login from './components/Login'
 import {Layout} from './components/Layout'
-import NavigationBar from './components/Navigationbar'
-import Footer from './components/Footer'
+import NavigationBar from './components/layouts/Navigationbar'
+import Footer from './components/layouts/Footer'
 import { Container } from 'react-bootstrap'
 
 
