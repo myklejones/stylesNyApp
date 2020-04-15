@@ -19,11 +19,11 @@ function App() {
         <NavigationBar />
 
         <Switch>
-          <Route path="/home" component={Home}/>
+          <Route exact path="/" component={Home}/>
           <Route path="/news" component={News}/>
           <Route path="/contacts" component={Contacts}/>
           <Route path="/details" component={Details}/>
-          <Route path="/not-found-page" component={NotFoundpage}/>
+          <Route  component={NotFoundpage}/>
 
         </Switch>
         <Footer />
