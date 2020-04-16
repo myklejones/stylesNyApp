@@ -1,16 +1,23 @@
-import React, { Component } from 'react'
-import {InfoConsumer} from '../context'
+import React, { Component } from "react";
+import { InfoConsumer } from "../context";
+import Info from '../Info'
 
 class Home extends Component {
-    render() {
-        return (
+  render() {
+    return (
+      <div className="container">
+        <div className="row mt-5">
           <InfoConsumer>
-              {data=>{
-                  return <h2>{data}</h2>
-              }}
+            {(data) => {
+              return data.info.map(item => {
+                  return <Info key={item.id} item={item} />;
+              })
+            }}
           </InfoConsumer>
-        )
-    }
+        </div>
+      </div>
+    );
+  }
 }
 
 export default Home;
