@@ -21,11 +21,12 @@ class InfoProvider extends Component {
           headerTitle: this.state.headerTitle,
           headerSubTitle: this.state.headerSubTitle,
           headerText: this.state.headerText,
-          detailInfo: this.detailInfo,
+          detailInfo: this.state.detailInfo,
           news: this.state.news,
           name: this.state.name,
           avatar: this.state.avatar,
           comment: this.state.comment,
+          
         }}
       >
         {this.props.children}
