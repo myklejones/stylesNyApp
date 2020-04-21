@@ -71,12 +71,36 @@ class Details extends Component {
                   <li className="nav-item">
                     <a
                       href="#map"
-                      className="nav-link "
+                      className="nav-link"
                       role="tab"
                       data-toggle="tab"
                     >Map</a>
                   </li>
                 </ul>
+                {/* tab pane  */}
+                <div className="tab-content mb-5">
+                    {/* about place tab  */}
+                    <div className="tab-pane in active text-center mt-5"
+                    role="tabepanel"
+                    >
+                        <h2 className="mb-3">{title}</h2>
+                        <p>{description}</p>
+                        <img src={img} alt={title} className="img-thumbnail img-fluid"/>
+                    </div>
+                    {/* reviews  */}
+                    <div className="tab-pane"
+                    id="reviews"
+                    role="tabpanel"
+                    > Revies Content
+                    </div>
+                      {/* map  */}
+                      <div className="tab-pane"
+                    id="map"
+                    role="tabpanel"
+                    > 
+                    <iframe src={maps} style={{border:'0', height:'28.125rem', width:'100%', frameborder: '0'}}></iframe>
+                    </div>
+                </div>
               </div>
             </>
           );
