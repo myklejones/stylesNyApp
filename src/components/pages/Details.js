@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { InfoConsumer } from "../context";
+import styled from 'styled-components'
 
 class Details extends Component {
   render() {
@@ -111,3 +112,7 @@ class Details extends Component {
 }
 
 export default Details;
+
+const HD= styled.header`
+
+`;
