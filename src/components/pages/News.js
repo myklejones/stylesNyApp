@@ -4,7 +4,7 @@ class News extends Component {
     render() {
         return (
             <div>
-                <h2>News page...</h2>
+                <h2>News page component .</h2>
             </div>
         )
     }
