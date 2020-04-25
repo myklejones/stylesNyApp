@@ -19,7 +19,7 @@ class Details extends Component {
           } = data.detailInfo;
           return (
             <>
-              <div className="container-fluid align-items-center">
+              <HD className="container-fluid align-items-center">
                 <h1 className="display-1 font-weight-bold">{headerTitle}</h1>
                 <h4 className="display-5">{headerSubTitle}</h4>
                 <p>{headerText}</p>
@@ -46,7 +46,7 @@ class Details extends Component {
                     </div>
                   </div>
                 </div>
-              </div>
+              </HD>
               {/* Nav-Links */}
               <div className="container">
                 <ul className="nav nav-tabs">
@@ -113,6 +113,33 @@ class Details extends Component {
 
 export default Details;
 
-const HD= styled.header`
+const HD = styled.header`
+background: linear-gradient(rgba(109,109,109), rgba(255,255,255 ));
+height: 100vh;
+text-transform: uppercase;
+color: white;
+text-align: center;
 
-`;
+h1 {
+  padding-top: 10%;
+  color: black;
+}
+
+h4 {
+  color: grey;
+}
+
+p {
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-bottom: 10%;
+  color: black; 
+}
+
+i {
+  font-size: 1.875rem;
+  color: black;
+  
+}
+
+`
