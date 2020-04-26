@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { InfoConsumer } from "../context";
 import styled from 'styled-components'
+import Reviews from "../Reviews";
 
 class Details extends Component {
   render() {
@@ -19,13 +20,13 @@ class Details extends Component {
           } = data.detailInfo;
           return (
             <>
-              <HD className="container-fluid align-items-center">
+              <HeaderDetails className="conteiner-fluid align-items-center">
                 <h1 className="display-1 font-weight-bold">{headerTitle}</h1>
                 <h4 className="display-5">{headerSubTitle}</h4>
                 <p>{headerText}</p>
                 {/* social Icons */}
                 <div className="container mt-5">
-                  <div className="row justify-contenet-center">
+                  <div className="row justify-content-center">
                     <div className="col-2">
                       <i className="fab fa-facebook-f" />
                     </div>
@@ -46,7 +47,7 @@ class Details extends Component {
                     </div>
                   </div>
                 </div>
-              </HD>
+              </HeaderDetails>
               {/* Nav-Links */}
               <div className="container">
                 <ul className="nav nav-tabs">
@@ -63,7 +64,7 @@ class Details extends Component {
                   <li className="nav-item">
                     <a
                       href="#reviews"
-                      className="nav-link "
+                      className="nav-link"
                       role="tab"
                       data-toggle="tab"
                     >Reviews</a>
@@ -78,11 +79,12 @@ class Details extends Component {
                     >Map</a>
                   </li>
                 </ul>
-                {/* tab pane  */}
+                {/* tab pane  */} 
                 <div className="tab-content mb-5">
                     {/* about place tab  */}
-                    <div className="tab-pane in active text-center mt-5"
-                    role="tabepanel"
+                    <div  id="aboutPlace" 
+                    className="tab-pane in active text-center mt-5"
+                    role="tabpanel"
                     >
                         <h2 className="mb-3">{title}</h2>
                         <p>{description}</p>
@@ -92,7 +94,8 @@ class Details extends Component {
                     <div className="tab-pane"
                     id="reviews"
                     role="tabpanel"
-                    > Revies Content
+                    > 
+                    <Reviews/>
                     </div>
                       {/* map  */}
                       <div className="tab-pane"
@@ -113,7 +116,7 @@ class Details extends Component {
 
 export default Details;
 
-const HD = styled.header`
+const HeaderDetails = styled.header`
 background: linear-gradient(rgba(109,109,109), rgba(255,255,255 ));
 height: 100vh;
 text-transform: uppercase;
@@ -139,7 +142,22 @@ p {
 i {
   font-size: 1.875rem;
   color: black;
-  
 }
 
-`
+i:hover {
+  color: blue;
+  cursor: pointer;
+}
+
+.nav-item {
+  height: 18.75rem;
+
+}
+
+@media(max-width:760px){
+  h1,
+  h4 {
+    color: white;
+  }
+}
+`;

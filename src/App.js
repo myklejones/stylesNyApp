@@ -15,7 +15,7 @@ import NotFoundpage from './components/pages/NotFoundPage'
 function App() {
   return (
     <>
-      <Layout>
+      {/* <Layout> */}
         <NavigationBar />
 
         <Switch>
@@ -27,7 +27,7 @@ function App() {
 
         </Switch>
         <Footer />
-      </Layout>
+      {/* </Layout> */}
     </>
   );
 }
