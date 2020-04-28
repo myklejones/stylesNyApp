@@ -14,6 +14,7 @@ class NewsCard extends Component {
                             <h5 key={id} className="card-title">{newsTitle}</h5>
                             <p className="crd-text">{newsText}</p>
                             <Link className="card-Link">Read More >></Link>
+                            
                         </div>
                     </div>
         )}
