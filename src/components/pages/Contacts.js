@@ -11,7 +11,7 @@ class Contacts extends Component {
                 </div>
                 <div className="row">
                     <div className="col-md-7">
-
+                        
                     </div>
                 </div>
             </section>
