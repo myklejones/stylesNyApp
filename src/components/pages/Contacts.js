@@ -11,7 +11,9 @@ class Contacts extends Component {
                 </div>
                 <div className="row">
                     <div className="col-md-7">
-                        
+                        <h1 className="container">
+                            some messages for the masses of the world to love the work i do.
+                        </h1>
                     </div>
                 </div>
             </section>
