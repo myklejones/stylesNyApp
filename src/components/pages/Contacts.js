@@ -12,7 +12,14 @@ class Contacts extends Component {
                 <div className="row">
                     <div className="col-md-7">
                         <h1 className="container">
-                            some messages for the masses of the world to love the work i do.
+                        <iframe 
+                        src="https://www.google.com/maps/d/embed?mid=12ZH7uGx2XupW7pmZ24hZ521TdhxL5NuR"
+                         style={{
+                        border:'0',
+                         width: '100%',
+                         height: '315px',
+                         frameborder: '0'
+                         }} allowFullScreen ></iframe>
                         </h1>
                     </div>
                 </div>
