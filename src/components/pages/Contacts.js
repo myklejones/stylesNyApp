@@ -8,7 +8,7 @@ class Contacts extends Component {
                     <div className="well well-sm">
                         <h3><strong>Our Location</strong></h3>
                     </div>
-                </div>
+                
                 <div className="row">
                     <div className="col-md-7">
                         <h1 className="container">
@@ -21,6 +21,7 @@ class Contacts extends Component {
                          frameborder: '0'
                          }} allowFullScreen ></iframe>
                         </h1>
+                        </div>
                     </div>
                 </div>
             </section>
