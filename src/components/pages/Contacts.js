@@ -22,7 +22,9 @@ class Contacts extends Component {
                          }} allowFullScreen ></iframe>
                         </h1>
                         </div>
-                        <div className="col-md-5"></div>
+                        <div className="col-md-5">
+                            <h4><strong>Contact Us</strong></h4>
+                        </div>
                     </div>
                 </div>
             </section>
