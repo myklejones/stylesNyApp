@@ -24,6 +24,7 @@ class Contacts extends Component {
                         </div>
                         <div className="col-md-5">
                             <h4><strong>Contact Us</strong></h4>
+                            <p>this is where the form for contacting us should be </p>
                         </div>
                     </div>
                 </div>
