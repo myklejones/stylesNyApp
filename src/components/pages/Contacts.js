@@ -24,13 +24,21 @@ class Contacts extends Component {
                         </div>
                         <div className="col-md-5">
                             <h4><strong>Contact Us</strong></h4>
-                            <p>this is where the form for contacting us should be </p>
+                            <form>
+                                <div className="form-group">
+                                    <input type="text" className="form-control" placeholder="Name" />
+                                </div>
+                                <div className="form-group">
+                                    <input type="email" className="form-control" placeholder="Email" />
+                                </div>
+                                <textarea  cols="30" rows="3" placeholder="Message" ></textarea>
+                            </form>
                         </div>
                     </div>
                 </div>
             </section>
         )
-    }
+    } 
 }
 
 export default Contacts; 
