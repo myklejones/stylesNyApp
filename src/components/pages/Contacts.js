@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import {Link} from 'react-router-dom'
 
 class Contacts extends Component {
     render() {
@@ -31,7 +32,11 @@ class Contacts extends Component {
                                 <div className="form-group">
                                     <input type="email" className="form-control" placeholder="Email" />
                                 </div>
-                                <textarea  cols="30" rows="3" placeholder="Message" ></textarea>
+                                <textarea className="form-control" cols="30" rows="3" placeholder="Message" ></textarea>
+                                <Link className="btn btn-outline-primary text-uppercase mt-1">
+                                    <i className="fa fa-paper-plane-o" aria-hidden="true" />
+                                    <i className="fab fa-telegram-plane"/>&nbsp;Send
+                                </Link>
                             </form>
                         </div>
                     </div>
@@ -41,4 +46,4 @@ class Contacts extends Component {
     } 
 }
 
-export default Contacts; 
+export default Contacts;  
