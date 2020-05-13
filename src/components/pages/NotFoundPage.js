@@ -14,10 +14,10 @@ class NotFoundPage extends Component {
                               Sorry, an error occured. The requested page was not found!
                           </div>
                           <div className="error-actions">
-                              <Link className="btn btn-outline-primary btn-lg">
+                              <Link to="/" className="btn btn-outline-primary btn-lg">
                                   <i className="fas fa-home"/>&nbsp;Back To Main
                               </Link>
-                              <Link className="btn btn-outline-psecondary btn-lg">
+                              <Link className="btn btn-outline-secondary btn-lg">
                                   <i className="fas fa-envelope"/>&nbsp;Support
                               </Link>
                           </div>
