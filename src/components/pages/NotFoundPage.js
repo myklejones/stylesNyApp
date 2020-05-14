@@ -20,6 +20,7 @@ class NotFoundPage extends Component {
                               <Link className="btn btn-outline-secondary btn-lg">
                                   <i className="fas fa-envelope"/>&nbsp;Support
                               </Link>
+                              
                           </div>
                       </div>
                   </div>
