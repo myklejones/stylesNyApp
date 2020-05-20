@@ -21,7 +21,7 @@ class NotFoundPage extends Component {
                               <Link className="btn btn-outline-secondary btn-lg">
                                   <i className="fas fa-envelope"/>&nbsp;Support
                               </Link>
-                            
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque perspiciatis quis veritatis minus deserunt at officia amet! Quasi inventore vero, cupiditate harum vel dignissimos similique ab laudantium nostrum magni fuga aliquam odit nam architecto!
                           </div>
                       </div>
                   </div>
